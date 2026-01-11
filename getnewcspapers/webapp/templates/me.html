@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html>
+<head><meta charset="utf-8"><title>我的推送</title></head>
+<body>
+<h3>我的每日推送</h3>
+<div>用户：{{ user.email }} <a href="/logout">退出</a></div>
+<div>我的兴趣：{{ user.interests|join('、') }}</div>
+<div>系统每日推送时间：{{ push_time }}</div>
+<h4>选择兴趣方向（最多 5 个）</h4>
+<form method="post" action="/me/interests">
+  {% for d in directions %}
+    <label style="display:inline-block;margin:6px 10px;">
+      <input type="checkbox" name="directions" value="{{ d }}" {% if d in user.interests %}checked{% endif %}>
+      {{ d }}
+    </label>
+  {% endfor %}
+  <div><button type="submit">保存</button></div>
+</form>
+<h4>今日候选</h4>
+<ul>
+{% for p in papers %}
+  <li><a href="{{ p.link }}" target="_blank">{{ p.title }}</a> | {{ p.direction }} | CCF {{ p.venue_ccf_level or '未知' }}</li>
+{% endfor %}
+</ul>
+</body>
+</html>

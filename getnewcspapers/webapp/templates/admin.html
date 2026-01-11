@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html>
+<head><meta charset="utf-8"><title>管理员</title></head>
+<body>
+<h3>管理员页面</h3>
+<div>管理员：{{ user.email }} <a href="/logout">退出</a></div>
+{% if msg %}<div style="color:green;">{{ msg }}</div>{% endif %}
+{% if error %}<div style="color:red;">{{ error }}</div>{% endif %}
+<h4>全局调度设置</h4>
+<form method="post" action="/admin/schedule">
+  <div>每日推送时间（HH:MM）：<input name="push_time" type="text" value="{{ push_time }}" required></div>
+  <div>间隔天数：<input name="interval_days" type="number" value="{{ interval_days }}" min="1" required></div>
+  <button type="submit">保存</button>
+</form>
+<h4>用户个性设置</h4>
+<table border="1" cellpadding="6" cellspacing="0">
+  <tr><th>邮箱</th><th>兴趣</th><th>推送时间</th><th>每日篇数</th><th>操作</th></tr>
+  {% for u in users %}
+  <tr>
+    <td>{{ u.email }}</td>
+    <td>{{ u.interests|join('、') }}</td>
+    <td>
+      <form method="post" action="/admin/user_settings">
+        <input type="hidden" name="user_id" value="{{ u.id }}">
+        <input name="push_time_user" type="text" value="{{ u.push_time_user or push_time }}" placeholder="HH:MM">
+        <input name="max_per_day_user" type="number" value="{{ u.max_per_day_user or max_per_day }}" min="5" max="10">
+        <button type="submit">保存</button>
+      </form>
+    </td>
+    <td>{{ u.max_per_day_user or max_per_day }}</td>
+    <td><form method="post" action="/admin/push"><button type="submit">立即推送</button></form></td>
+  </tr>
+  {% endfor %}
+</table>
+<h4>向指定邮箱发送今日推荐</h4>
+<form method="post" action="/admin/send_email">
+  <div>邮箱：<input name="email" type="email" required></div>
+  <div>选择领域：</div>
+  <div>
+    {% for d in directions %}
+      <label style="display:inline-block;margin:6px 10px;">
+        <input type="checkbox" name="directions" value="{{ d }}"> {{ d }}
+      </label>
+    {% endfor %}
+  </div>
+  <div><button type="submit">发送</button></div>
+  <div style="font-size:12px;color:#666;">每个领域发送10篇；排序规则不变。</div>
+</form>
+<h4>每日每领域 10 篇预览</h4>
+<div>排序规则：先 CCF 等级 A/B/C，其次发表时间越早越先</div>
+{% for d in directions %}
+  <h5>{{ d }}</h5>
+  <ul>
+  {% for p in grouped[d] %}
+    <li><a href="{{ p.link }}" target="_blank">{{ p.title }}</a> | {{ p.direction }} | CCF {{ p.venue_ccf_level or '未知' }}</li>
+  {% endfor %}
+  </ul>
+{% endfor %}
+</body>
+</html>

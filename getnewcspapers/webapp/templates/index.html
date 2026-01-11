@@ -1,0 +1,15 @@
+<!DOCTYPE html>
+<html>
+<head><meta charset="utf-8"><title>首页</title></head>
+<body>
+<h2>每日CS预印本推送</h2>
+{% if user %}
+<div>已登录：{{ user.email }}（{{ user.role }}） <a href="/logout">退出</a></div>
+<div><a href="/me">查看我的每日推送</a>{% if user.role == 'admin' %} | <a href="/admin">管理员页面</a>{% endif %}</div>
+{% else %}
+<div><a href="/login">登录</a> 或 <a href="/register">注册</a></div>
+{% endif %}
+<div>系统默认方向：{{ areas|join('、') }}</div>
+<div>每日时间：{{ push_time }}，间隔天数：{{ interval_days }}</div>
+</body>
+</html>

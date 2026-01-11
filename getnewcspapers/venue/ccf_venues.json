@@ -1,0 +1,55 @@
+{
+  "ISCA": {"level": "A", "direction": "计算机体系结构 / 并行与分布计算 / 存储系统"},
+  "MICRO": {"level": "A", "direction": "计算机体系结构 / 并行与分布计算 / 存储系统"},
+  "HPCA": {"level": "A", "direction": "计算机体系结构 / 并行与分布计算 / 存储系统"},
+  "ASPLOS": {"level": "A", "direction": "计算机体系结构 / 并行与分布计算 / 存储系统"},
+  "USENIX ATC": {"level": "B", "direction": "计算机体系结构 / 并行与分布计算 / 存储系统"},
+  "PPoPP": {"level": "B", "direction": "计算机体系结构 / 并行与分布计算 / 存储系统"},
+  "SC": {"level": "A", "direction": "计算机体系结构 / 并行与分布计算 / 存储系统"},
+  "Eurosys": {"level": "A", "direction": "计算机体系结构 / 并行与分布计算 / 存储系统"},
+  "FAST": {"level": "A", "direction": "计算机体系结构 / 并行与分布计算 / 存储系统"},
+
+  "SIGCOMM": {"level": "A", "direction": "计算机网络"},
+  "NSDI": {"level": "A", "direction": "计算机网络"},
+  "INFOCOM": {"level": "A", "direction": "计算机网络"},
+  "MOBICOM": {"level": "A", "direction": "计算机网络"},
+  "CoNEXT": {"level": "B", "direction": "计算机网络"},
+  "ICNP": {"level": "B", "direction": "计算机网络"},
+
+  "S&P": {"level": "A", "direction": "网络与信息安全"},
+  "IEEE S&P": {"level": "A", "direction": "网络与信息安全"},
+  "CCS": {"level": "A", "direction": "网络与信息安全"},
+  "USENIX Security": {"level": "A", "direction": "网络与信息安全"},
+  "NDSS": {"level": "A", "direction": "网络与信息安全"},
+
+  "ICSE": {"level": "A", "direction": "软件工程 / 系统软件 / 程序设计语言"},
+  "FSE": {"level": "A", "direction": "软件工程 / 系统软件 / 程序设计语言"},
+  "ASE": {"level": "B", "direction": "软件工程 / 系统软件 / 程序设计语言"},
+  "PLDI": {"level": "A", "direction": "软件工程 / 系统软件 / 程序设计语言"},
+  "POPL": {"level": "A", "direction": "软件工程 / 系统软件 / 程序设计语言"},
+  "OOPSLA": {"level": "A", "direction": "软件工程 / 系统软件 / 程序设计语言"},
+
+  "SIGMOD": {"level": "A", "direction": "数据库 / 数据挖掘 / 内容检索"},
+  "VLDB": {"level": "A", "direction": "数据库 / 数据挖掘 / 内容检索"},
+  "KDD": {"level": "A", "direction": "数据库 / 数据挖掘 / 内容检索"},
+  "ICDM": {"level": "B", "direction": "数据库 / 数据挖掘 / 内容检索"},
+  "WWW": {"level": "A", "direction": "数据库 / 数据挖掘 / 内容检索"},
+
+  "STOC": {"level": "A", "direction": "计算机科学理论"},
+  "FOCS": {"level": "A", "direction": "计算机科学理论"},
+  "SODA": {"level": "A", "direction": "计算机科学理论"},
+
+  "SIGGRAPH": {"level": "A", "direction": "计算机图形学与多媒体"},
+  "ACM MM": {"level": "A", "direction": "计算机图形学与多媒体"},
+
+  "NeurIPS": {"level": "A", "direction": "人工智能"},
+  "ICML": {"level": "A", "direction": "人工智能"},
+  "ICLR": {"level": "A", "direction": "人工智能"},
+  "AAAI": {"level": "A", "direction": "人工智能"},
+  "ACL": {"level": "A", "direction": "人工智能"},
+  "IJCAI": {"level": "A", "direction": "人工智能"},
+
+  "CHI": {"level": "A", "direction": "人机交互与普适计算"},
+  "UIST": {"level": "A", "direction": "人机交互与普适计算"},
+  "Ubicomp": {"level": "A", "direction": "人机交互与普适计算"}
+}

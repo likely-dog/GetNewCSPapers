@@ -1,0 +1,30 @@
+计算机体系结构 / 并行与分布计算 / 存储系统:
+  primary_categories: [cs.AR, cs.DC, cs.SY]
+  keywords: [architecture, microarchitecture, multicore, distributed, cloud, storage, memory, cache, scheduling, asplos, isca, micro, hpca, eurosys, fast, sc, ppopp]
+计算机网络:
+  primary_categories: [cs.NI]
+  keywords: [network, routing, congestion, tcp, wireless, 5g, edge, sigcomm, nsdi, infocom, mobicom, conext]
+网络与信息安全:
+  primary_categories: [cs.CR]
+  keywords: [security, privacy, cryptography, malware, attack, defense, s&p, ccs, usenix, ndss]
+软件工程 / 系统软件 / 程序设计语言:
+  primary_categories: [cs.SE, cs.PL, cs.OS]
+  keywords: [software, testing, static analysis, program, compiler, runtime, icse, fse, ase, pldi, popl, oopsla]
+数据库 / 数据挖掘 / 内容检索:
+  primary_categories: [cs.DB, cs.IR]
+  keywords: [database, indexing, query, transaction, mining, clustering, retrieval, ranking, sigmod, vldb, kdd, icdm, www]
+计算机科学理论:
+  primary_categories: [cs.CC, cs.DS, cs.LO]
+  keywords: [theory, complexity, graph, algorithm, proof, stoc, focs, soda]
+计算机图形学与多媒体:
+  primary_categories: [cs.GR, cs.MM]
+  keywords: [graphics, rendering, animation, multimedia, compression, siggraph, mm]
+人工智能:
+  primary_categories: [cs.AI, stat.ML, cs.LG]
+  keywords: [learning, transformer, diffusion, reinforcement, generative, perception, neurips, icml,acl,iclr, aaai, ijcai]
+人机交互与普适计算:
+  primary_categories: [cs.HC]
+  keywords: [interaction, usability, hci, mobile, wearable, ubicomp, chi, uist]
+交叉 / 综合 / 新兴领域:
+  primary_categories: [cs.CY, cs.RO, cs.CV, cs.IT]
+  keywords: [robotics, privacy, vision, multimodal, systems for ai, ml-systems, robustness]
