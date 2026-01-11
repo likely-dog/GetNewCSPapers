@@ -5,13 +5,13 @@ from email.mime.text import MIMEText
 # ================= 配置区域 / Configuration =================
 # 请在此处直接修改您的邮箱配置信息
 SMTP_CONFIG = {
-    "SMTP_HOST": "smtp.qq.com",        # 邮件服务器地址，例如 smtp.qq.com
+    "SMTP_HOST": "",        # 邮件服务器地址，例如 smtp.qq.com
     "SMTP_PORT": 587,                  # 端口，通常为 465 (SSL) 或 587 (STARTTLS)
-    "SMTP_USER": "3298807098@qq.com", # 发件人邮箱账号
-    "SMTP_PASS": "okkphacewdkidbad",      # 邮箱授权码或密码
+    "SMTP_USER": "", # 发件人邮箱账号
+    "SMTP_PASS": "",      # 邮箱授权码或密码
     "SMTP_SSL": False,                 # 是否使用 SSL (如果端口是 465 通常为 True)
     "SMTP_STARTTLS": True,             # 是否使用 STARTTLS (如果端口是 587 通常为 True)
-    "SMTP_FROM": "3298807098@qq.com", # 发件人显示地址 (通常与 user 相同)
+    "SMTP_FROM": "", # 发件人显示地址 (通常与 user 相同)
     "SMTP_TIMEOUT": 20                 # 连接超时时间(秒)
 }
 # ===========================================================
